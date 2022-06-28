@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg: hsl(233, 47%, 7%);
+    --card-bg: hsl(246, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --accent-bg: hsla(277, 77%, 37%, 0.6);
+    --white: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--main-bg);
+    padding: 24px;
+    line-height: 1.5;
+}
+
+/* Text Styles */
+h1 {
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+p {
+    color: var(--main-paragraph);
+    font-family: 'Inter', sans-serif;
+    margin: 2rem 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--stat-headings);
+}
+
+.emphasis {
+    font-weight: bold;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Card Styles */
+
+.card {
+    background-color: var(--card-bg);
+    margin: 4rem auto;
+    text-align: center;
+    border-radius: 12px;
+}
+
+/* Background Image */
+
+.mobile__bg {
+    background-image: 
+    linear-gradient(
+        var(--accent-bg),
+        var(--accent-bg)
+    ),
+    url(stats-preview-card-component-main/images/image-header-mobile.jpg);
+    height: 240px;
+    width: 100%;
+    background-size: contain;
+
+    border-radius: 12px 12px 0px 0px;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Stat Styles */
+.stats {
+    margin: 1rem 0;
+}
