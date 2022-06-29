@@ -74,7 +74,7 @@ p {
 
 /* Background Image */
 
-.mobile__bg {
+.bg-image {
     background-image: 
     linear-gradient(
         var(--accent-bg),
@@ -82,7 +82,7 @@ p {
     ),
     url(stats-preview-card-component-main/images/image-header-mobile.jpg);
     height: 240px;
-    max-height: 480px;
+    /* max-height: 480px; */
     width: 100%;
     background-size: cover;
 
@@ -110,4 +110,65 @@ main {
 
 .stat.queries {
     grid-row: 3 / span 1;
+}
+
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 950px) {
+    /* Text Styles */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Card Styles */
+    .card {
+        max-width: 1300px;
+        max-height: 430px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1;
+        text-align: left;
+    }
+
+    main {
+        grid-column: 1 / span 1;
+        grid-row: 1 / -1;
+        padding: 4rem;
+    }
+
+    .bg-image {
+        grid-column: 2 / span 1;
+        grid-row: 1 / -1;
+        background-size: contain;
+        max-height: 430px;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Stat Styles */
+.stat-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.stat.companies {
+    grid-column: 1 / span 1;
+}
+
+.stat.templates {
+    grid-column: 2 / span 1;
+}
+
+.stat.queries {
+    grid-column: 3 / span 1;
+}
+
+/* Text Styles */
+p {
+    width: 75%;
+    margin-bottom: 3.25rem;
+    margin-top: 1.5rem;
+}
 }
