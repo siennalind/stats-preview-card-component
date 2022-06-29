@@ -70,8 +70,9 @@ p {
     ),
     url(stats-preview-card-component-main/images/image-header-mobile.jpg);
     height: 240px;
+    max-height: 480px;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
 
     border-radius: 12px 12px 0px 0px;
 }
@@ -81,6 +82,20 @@ main {
 }
 
 /* Stat Styles */
-.stats {
-    margin: 1rem 0;
+.stat-wrapper {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.stat.companies {
+    grid-row: 1 / span 1;
+}
+
+.stat.templates {
+    grid-row: 2 / span 1;
+}
+
+.stat.queries {
+    grid-row: 3 / span 1;
 }
