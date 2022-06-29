@@ -15,7 +15,6 @@
 body {
     font-size: 15px;
     background-color: var(--main-bg);
-    padding: 24px;
     line-height: 1.5;
 }
 
@@ -70,6 +69,7 @@ p {
     margin: 4rem auto;
     text-align: center;
     border-radius: 12px;
+    max-width: 85%;
 }
 
 /* Background Image */
@@ -144,31 +144,32 @@ main {
         max-height: 430px;
         height: 100%;
         width: 100%;
+        border-radius: 0px 12px 12px 0px;
     }
 
     /* Stat Styles */
-.stat-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
+    .stat-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 
-.stat.companies {
-    grid-column: 1 / span 1;
-}
+    .stat.companies {
+        grid-column: 1 / span 1;
+    }
 
-.stat.templates {
-    grid-column: 2 / span 1;
-}
+    .stat.templates {
+        grid-column: 2 / span 1;
+    }
 
-.stat.queries {
-    grid-column: 3 / span 1;
-}
+    .stat.queries {
+        grid-column: 3 / span 1;
+    }
 
-/* Text Styles */
-p {
-    width: 75%;
-    margin-bottom: 3.25rem;
-    margin-top: 1.5rem;
-}
+    /* Text Styles */
+    p {
+        width: 75%;
+        margin-bottom: 3.25rem;
+        margin-top: 1.5rem;
+    }
 }
