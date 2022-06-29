@@ -19,6 +19,18 @@ body {
     line-height: 1.5;
 }
 
+/* Attribution Section Styles */
+
+.attribution {
+    font-family: 'Inter', sans-serif;
+    color: var(--main-paragraph);
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--accent);
+}
+
 /* Text Styles */
 h1 {
     color: var(--white);
